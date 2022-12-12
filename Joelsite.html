@@ -1,0 +1,379 @@
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Mirandas site</title>
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+            body{
+                font-family: 'Roboto', sans-serif;
+                background-color: whitesmoke;
+            }        
+             .title {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 40px;
+                font-weight: 700;
+                font-family: 'Square Peg', cursive;
+                width: right;
+                color: #00d6ff; 
+                background-color: white; 
+                padding-bottom: 15px; 
+                border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+            }
+            .atua {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 16px;
+                color: #2b1219;
+            }
+            .imagem {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30%;
+                height: 25%;
+    
+            }    
+            .imagem1 {
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                height: 15%;
+                margin-top: 1%;
+                margin-bottom: 20px;
+            }
+    
+            .container-nomes{
+                display: flex;
+                flex-direction: column;
+                line-height: 0px;
+    
+            }
+            .p1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                color: #ff007f;
+            }
+            .p2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                color: gray;
+                margin-top: 3px;
+            }
+            .coluna-item{
+                display: flex;
+                flex-direction: row;
+                place-content: flex-end;
+                height: 35px;
+                padding-right: 8%;
+            }
+            .coluna-item h4{
+                flex: 1;
+                font-weight: bolder;
+                min-width: 30px;
+            }
+            .item {
+                flex: 1;
+            text-align: center;
+            padding: 5px;
+            width: 7%;
+            border: 2px solid #51aaa3;
+            color: #51aaa3;
+            }
+            .coluna-item p {
+                height: 21px;
+                margin-top: 0px;
+                font: status-bar;
+                color: red;
+                font-family: 'Square Peg', cursive;
+                font-weight: 900;
+                
+            }
+            .btm {
+                width: 83px;
+                align-self: center;
+                margin-top: 1%;
+            }
+            .ran {
+                display: flex;
+                flex-direction: row;
+                place-self: end;
+                width: 51%;
+                font-family: 'Courier New';
+                color: maroon;
+                
+            }
+    
+            
+    
+            @media screen and (max-width: 600px) {
+                body {
+                    background-color: rgb(216, 216, 216);
+                }
+                .container-nomes{
+                    font-size: 10px;
+                }
+                .title{
+                    font-size: 24px;
+                }
+                .imagem {
+                    width: 10%;
+                    height: 10%;
+                }
+                .imagem1 {
+                    width: 40%;
+                }
+                
+            }
+            @media  screen and (max-width: 1280px) {
+                .imagem {
+                    width: 15%;
+                    height: 15%;
+                }
+            }
+        </style>
+            
+            <div class="title"> Mau - Mau </div>
+    </head>
+    <body>
+    
+        
+        <div class="container">
+            <div>
+                <p class= "p1"> Jogue e coloque os resultados nos quadros e tenha o resultado em tempo real!</p>
+            </div>
+            
+    
+            <!--Faz uma div coloca imagem dentro cria uma class poem display flex procura no google como centralizar um flex-->
+            <div> <img class="imagem1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvz01c7bhe-auNyCuV4Y-8ENkv69HlBPZbQ&usqp=CAU"> </div>
+            
+            
+            <div class="container-nomes">
+                |<div class="coluna-item" id="a"> 
+                    <h4>Joel</h4> 
+                    <input id="jo1" class="item" type="number" onblur="calcular();">
+                    <input id="jo2" class="item" type="number" onblur="calcular();">
+                    <input id="jo3"class="item" type="number" onblur="calcular();">
+                    <input id="jo4"class="item" type="number" onblur="calcular();">
+                    <input id="jo5"class="item" type="number" onblur="calcular();">
+                    <input id="jo6"class="item" type="number" onblur="calcular();">
+                    <input id="jo7"class="item" type="number" onblur="calcular();">
+                    <input id="jo8"class="item" type="number" onblur="calcular();">
+                    <input id="jo9"class="item" type="number" onblur="calcular();">
+                    <input id="jo10"class="item" type="number"onblur="calcular();">
+                    <p type="Number" class="item" id="result1"></p>
+                </div>
+                
+                
+                <div class="coluna-item">
+                    <h4 >Jaque</h4>
+                    <input id="ja1" class="item" type="number" onblur="calcular();">
+                    <input id="ja2" class="item" type="number" onblur="calcular();">
+                    <input id="ja3" class="item" type="number" onblur="calcular();">
+                    <input id="ja4" class="item" type="number" onblur="calcular();">
+                    <input id="ja5" class="item" type="number" onblur="calcular();">
+                    <input id="ja6" class="item" type="number" onblur="calcular();">
+                    <input id="ja7" class="item" type="number" onblur="calcular();">
+                    <input id="ja8" class="item" type="number" onblur="calcular();">
+                    <input id="ja9" class="item" type="number" onblur="calcular();">
+                    <input id="ja10" class="item" type="number" onblur="calcular();">
+                    <p type="Number" class="item" id="result2"></p>
+                </div>
+    
+                <div class="coluna-item">
+                    <h4 >Brian</h4>
+                    <input id="br1" class="item" type="number" onblur="calcular();">
+                    <input id="br2" class="item" type="number" onblur="calcular();">
+                    <input id="br3" class="item" type="number" onblur="calcular();">
+                    <input id="br4" class="item" type="number" onblur="calcular();">
+                    <input id="br5" class="item" type="number" onblur="calcular();">
+                    <input id="br6" class="item" type="number" onblur="calcular();">
+                    <input id="br7" class="item" type="number" onblur="calcular();">
+                    <input id="br8" class="item" type="number" onblur="calcular();">
+                    <input id="br9" class="item" type="number" onblur="calcular();">
+                    <input id="br10" class="item" type="number" onblur="calcular();">
+                    <p type="Number" class="item" id="result3"></p>
+                </div>
+    
+                <div class="coluna-item">
+                    <h4 >Buiú</h4>
+                    <input id="bu1" class="item" type="number" onblur="calcular();">
+                    <input id="bu2" class="item" type="number" onblur="calcular();">
+                    <input id="bu3" class="item" type="number" onblur="calcular();">
+                    <input id="bu4" class="item" type="number" onblur="calcular();">
+                    <input id="bu5" class="item" type="number" onblur="calcular();">
+                    <input id="bu6" class="item" type="number" onblur="calcular();">
+                    <input id="bu7" class="item" type="number" onblur="calcular();">
+                    <input id="bu8" class="item" type="number" onblur="calcular();">
+                    <input id="bu9" class="item" type="number" onblur="calcular();">
+                    <input id="bu10" class="item" type="number" onblur="calcular();">
+                    <p type="Number" class="item" id="result4"></p>
+                </div>
+    
+                <div class="coluna-item">
+                    <h4 >Nivea</h4>
+                    <input id="ni1" class="item" type="number" onblur="calcular();">
+                    <input id="ni2" class="item" type="number" onblur="calcular();">
+                    <input id="ni3" class="item" type="number" onblur="calcular();">
+                    <input id="ni4" class="item" type="number" onblur="calcular();">
+                    <input id="ni5" class="item" type="number" onblur="calcular();">
+                    <input id="ni6" class="item" type="number" onblur="calcular();">
+                    <input id="ni7" class="item" type="number" onblur="calcular();">
+                    <input id="ni8" class="item" type="number" onblur="calcular();">
+                    <input id="ni9" class="item" type="number" onblur="calcular();">
+                    <input id="ni10" class="item" type="number" onblur="calcular();">
+                    <p type="Number" class="item" id="result5"></p>
+                </div>
+    
+                <div class="coluna-item">
+                    <h4 >Nicole</h4>
+                    <input id="nic1" class="item" type="number" onblur="calcular();">
+                    <input id="nic2" class="item" type="number" onblur="calcular();">
+                    <input id="nic3" class="item" type="number" onblur="calcular();">
+                    <input id="nic4" class="item" type="number" onblur="calcular();">
+                    <input id="nic5" class="item" type="number" onblur="calcular();">
+                    <input id="nic6" class="item" type="number" onblur="calcular();">
+                    <input id="nic7" class="item" type="number" onblur="calcular();">
+                    <input id="nic8" class="item" type="number" onblur="calcular();">
+                    <input id="nic9" class="item" type="number" onblur="calcular();">
+                    <input id="nic10" class="item" type="number" onblur="calcular();">
+                    <p type="Number" class="item" id="result6"></p>
+                    
+                </div>
+            
+             <p id="ran" class="ran"></p>
+             <p id="ar">ranking</p>
+             
+            
+            </div>
+            
+            <h1 class="atua">Bom jogo a todos!</h1>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJxLXE7ohd5PyqPcqivFyawIHoUPNSPniKnmOKpSS6twp8JXzH1bCVUQ5UttwJoDk-D8&usqp=CAU" class="imagem" id="imgp">
+            </div>  
+            <p class="p2">Versão 1.0.1 estável</p>
+        </div>
+            
+        
+    
+       
+        <script>
+           window.alert("olá. Está pronto para essa experiência incrível? Clica em ok e vamos lá!")
+            nome = window.prompt("Para começar digite seu nome ")
+            window.alert(`Parabéns ${nome}! vamos começar. Seja bem vindo ao site do jogo mau-mau!!!`)
+           function calcular() {
+            
+        var num1 = Number(document.getElementById("jo1").value);
+        var num2 = Number(document.getElementById("jo2").value);
+        var num3 = Number(document.getElementById("jo3").value);
+        var num4 = Number(document.getElementById("jo4").value);
+        var num5 = Number(document.getElementById("jo5").value);
+        var num6 = Number(document.getElementById("jo6").value);
+        var num7 = Number(document.getElementById("jo7").value);
+        var num8 = Number(document.getElementById("jo8").value);
+        var num9 = Number(document.getElementById("jo9").value);
+        var num10 = Number(document.getElementById("jo10").value);
+        var elemResult1 = [Number(num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10)]
+        document.getElementById("result1").innerHTML = elemResult1
+    
+        var num11 = Number(document.getElementById("ja1" ).value);
+        var num21 = Number(document.getElementById("ja2" ).value);
+        var num31 = Number(document.getElementById("ja3" ).value);
+        var num41 = Number(document.getElementById("ja4" ).value);
+        var num51 = Number(document.getElementById("ja5" ).value);
+        var num61 = Number(document.getElementById("ja6" ).value);
+        var num71 = Number(document.getElementById("ja7" ).value);
+        var num81 = Number(document.getElementById("ja8" ).value);
+        var num91 = Number(document.getElementById("ja9" ).value);
+        var num101 = Number(document.getElementById("ja10").value);
+        var elemResult2 = [Number(num11 + num21 + num31 + num41 + num51 + num61 + num71 + num81 + num91 + num101)]
+        document.getElementById("result2").innerHTML = elemResult2
+    
+        var num12 = Number(document.getElementById("br1" ).value);
+        var num22 = Number(document.getElementById("br2" ).value);
+        var num32 = Number(document.getElementById("br3" ).value);
+        var num42 = Number(document.getElementById("br4" ).value);
+        var num52 = Number(document.getElementById("br5" ).value);
+        var num62 = Number(document.getElementById("br6" ).value);
+        var num72 = Number(document.getElementById("br7" ).value);
+        var num82 = Number(document.getElementById("br8" ).value);
+        var num92 = Number(document.getElementById("br9" ).value);
+        var num102 = Number(document.getElementById("br10").value);
+        var elemResult3 = [Number(num12 + num22 + num32 + num42 + num52 + num62 + num72 + num82 + num92 + num102)]
+        document.getElementById("result3").innerHTML = elemResult3
+    
+       
+    
+        var num13 = Number(document.getElementById("bu1" ).value);
+        var num23 = Number(document.getElementById("bu2" ).value);
+        var num33 = Number(document.getElementById("bu3" ).value);
+        var num43 = Number(document.getElementById("bu4" ).value);
+        var num53 = Number(document.getElementById("bu5" ).value);
+        var num63 = Number(document.getElementById("bu6" ).value);
+        var num73 = Number(document.getElementById("bu7" ).value);
+        var num83 = Number(document.getElementById("bu8" ).value);
+        var num93 = Number(document.getElementById("bu9" ).value);
+        var num103 = Number(document.getElementById("bu10").value);
+        var elemResult4 = [Number(num13 + num23 + num33 + num43 + num53 + num63 + num73 + num83 + num93 + num103)]
+        document.getElementById("result4").innerHTML = elemResult4
+    
+       
+        var num14 = Number(document.getElementById("ni1" ).value);
+        var num24 = Number(document.getElementById("ni2" ).value);
+        var num34 = Number(document.getElementById("ni3" ).value);
+        var num44 = Number(document.getElementById("ni4" ).value);
+        var num54 = Number(document.getElementById("ni5" ).value);
+        var num64 = Number(document.getElementById("ni6" ).value);
+        var num74 = Number(document.getElementById("ni7" ).value);
+        var num84 = Number(document.getElementById("ni8" ).value);
+        var num94 = Number(document.getElementById("ni9" ).value);
+        var num104 = Number(document.getElementById("ni10").value);
+        var elemResult5 = [Number(num14 + num24 + num34 + num44 + num54 + num64 + num74 + num84 + num94 + num104)]
+        document.getElementById("result5").innerHTML = elemResult5
+    
+        
+    
+        var num15 = Number(document.getElementById("nic1" ).value);
+        var num25 = Number(document.getElementById("nic2" ).value);
+        var num35 = Number(document.getElementById("nic3" ).value);
+        var num45 = Number(document.getElementById("nic4" ).value);
+        var num55 = Number(document.getElementById("nic5" ).value);
+        var num65 = Number(document.getElementById("nic6" ).value);
+        var num75 = Number(document.getElementById("nic7" ).value);
+        var num85 = Number(document.getElementById("nic8" ).value);
+        var num95 = Number(document.getElementById("nic9" ).value);
+        var num105 = Number(document.getElementById("nic10").value);
+        var elemResult6 = [Number(num15 + num25 + num35 + num45 + num55 + num65 + num75 + num85 + num95 + num105)]
+        document.getElementById("result6").innerHTML = elemResult6
+    
+    
+        max = Math.max(elemResult1, elemResult2, elemResult3, elemResult4, elemResult5, elemResult6)
+        min = Math.min(elemResult1, elemResult2, elemResult3, elemResult4, elemResult5, elemResult6)
+        b = (max, min)
+        b = (` O ganhador fez o número ${min} e o último lugar teve ${max} pontos!`)
+        document.getElementById("ran").innerHTML = b
+
+        var final = [elemResult1, elemResult2, elemResult3, elemResult4, elemResult5, elemResult6]
+            final.sort((a, b) => a-b)
+        for(pos = 0; pos < final.length; pos++) {
+            document.getElementById("ar").innerHTML = final
+        }
+    
+    
+    
+           }
+        
+    
+    </script>
+        
+    </body>
+    </html>
