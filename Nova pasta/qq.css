@@ -1,0 +1,49 @@
+
+header{
+    text-align: center;
+    font-size: 200%;
+    box-shadow: 10px 10px 5px black;
+    width: 55%;
+    margin: auto;
+    color: aliceblue;
+    background-color: rgb(24, 147, 255);
+    border-radius: 10px;
+}
+#fotos{
+    width: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+}
+body{
+    background-color: rgb(139, 201, 255);
+}
+footer{
+    margin-top: 10%;
+    text-align: center;
+    animation: go-back 1s infinite alternate;
+    
+}
+@keyframes go-back{
+    from{
+        transform: translateX(20%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 800px) {
+    header{
+        width: 85%;
+        font-size: 150%;
+    }
+
+    #fotos{
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 3%;
+    }
+    
+}
