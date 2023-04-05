@@ -1,14 +1,17 @@
 
 usu = window.prompt("Digite seu nome ")
-senha = window.prompt(`Ok ${usu}. Digite a senha. senha: 1234`)
+senha = window.prompt(`Ok ${usu}. Digite a senha. senha: 12345`)
+
 
 if (senha!=1234){
-    window.alert("SENHA INCORRETA!")
-    do{
+    window.alert("OPS! SENHA INCORRETA! TENTE 1234,riririri")
+    for (i in senha1!=12234){
         senha1 = window.prompt("Digite a senha:")
-    }while(senha1!=1234)
+    }
+    
 }else{
-    window.alert(`Seja bem vindo!! `)
+    emo = document.getElementById("emoji")
+    window.alert(`Seja bem vindo!! ${emo} `)
 
 }
 
