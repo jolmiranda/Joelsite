@@ -15,6 +15,24 @@ header{
     margin: auto;
     margin-top: 2%;
 }
+.links {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    left: 83%;
+    bottom: 750px;
+    background-color: antiquewhite;
+    width: 15%;
+    height: 500%;
+
+    
+}
+#ti {
+    text-align: center;
+}
+#tii {
+    text-align: center;
+}
 body{
     background-color: rgb(139, 201, 255);
 }
@@ -44,6 +62,27 @@ footer{
         display: block;
         margin: auto;
         margin-top: 4%;
+    }
+    .links {
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 83%;
+        bottom: 600px;
+        background-color: antiquewhite;
+        width: 15%;
+        height: 350%;
+        
+
+    }
+    #tii{
+        text-align: center;
+        font-size: 15px;
+    }
+    #ti{
+        text-align: center;
+        font-size: 12px;
     }
     
 }
